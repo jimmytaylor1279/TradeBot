@@ -1,0 +1,21 @@
+
+Project Requirements:
+1. A GUI to monitor stock prices of the Fortune 500 stocks. The GUI should read from a file of the top 20 most active Fortune 500 stocks and populate a dropdown with these symbols. The price should also update. The top option should start being monitored. There should be a button on the GUI to update the list at the user's discretion. When the user updates the list, the dropdown and the file need to be updated.
+2. A graph of the current stock being traded.
+3. A selectable list of the top 20 most active stocks for the last month with their current stock price.
+4. Account balance.
+5. A button to switch between paper trading and real trading.
+6. The program must be able to get stock history and train a neural network on its history to predict outcomes.
+7. It needs to be able to enter and exit trades on its own.
+8. We need to build the program so we can later add the ability to monitor multiple stocks and enter multiple trades at the same time.
+9. The broker for the project should be Alpaca.
+10. The application should have error handling to manage API failures or unexpected responses.
+11. The application should have logging capabilities to track its operations and any errors.
+12. The application should be able to handle different market conditions (bull market, bear market, etc.).
+13. The application should have a user-friendly interface.
+14. The application should have a secure way to handle user credentials.
+15. The code must follow PEP 8 coding standards.
+16. The code must use the latest version of alpaca-py, which is 0.10.0.
+17. When opening an inital trade the total cost of the trade should be around %5 of the account total. When opening a subsequent trade 
+    if the previous trade was a gain, then the current trade should be %5 of the account total. If the previous trade was a loss then the 
+    current trade needs to be double the lost amount. If there are three losses in a row then the trade amount should be %5 of the account total.
